@@ -54,5 +54,28 @@ namespace ACM.BLTest
             //-- Assert
             Assert.Equal(expectedFullName, actualFullname);
         }
+
+        [Fact]
+        public void ShouldCount3InInstanceCounterStaticProperty()
+        {
+
+            //-- Arrange
+            Customer customer1 = new Customer();
+            customer1.FirstName = "Ana";
+            Customer.InstanceCounter += 1;
+
+            Customer customer2 = new Customer();
+            customer2.FirstName = "Juan";
+            Customer.InstanceCounter += 1;
+
+            Customer customer3 = new Customer();
+            customer3.FirstName = "Pedro";
+            Customer.InstanceCounter += 1;
+
+            //-- Act
+
+            //-- Assert
+            Assert.Equal(3, Customer.InstanceCounter);
+        }
     }
 }

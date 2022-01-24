@@ -4,6 +4,8 @@ namespace ACM.BL
 {
     public class Customer
     {
+        public static int InstanceCounter { get; set; }
+
         public int Id { get; private set; }
 
         private string _lastName;
