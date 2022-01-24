@@ -41,6 +41,11 @@ namespace ACM.BL
             }
         }
 
+        public Customer()
+        {
+            
+        }
+
         public Customer(int id)
         {
             Id = id;
