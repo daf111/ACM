@@ -41,6 +41,10 @@ namespace ACM.BL
             }
         }
 
+        public Customer(int id)
+        {
+            Id = id;
+        }
 
         /// <summary>
         /// Validates the customer data.
