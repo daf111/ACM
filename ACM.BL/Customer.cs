@@ -25,6 +25,8 @@ namespace ACM.BL
 
         public string Email { get; set; }
 
+        public List<Address> Addresses { get; set; }
+
         public string FullName {
             get
             {
@@ -41,7 +43,7 @@ namespace ACM.BL
             }
         }
 
-        public Customer()
+        public Customer(): this(0) //Constructor chaning
         {
             
         }
@@ -49,6 +51,7 @@ namespace ACM.BL
         public Customer(int id)
         {
             Id = id;
+            Addresses = new List<Address>();
         }
 
         /// <summary>
