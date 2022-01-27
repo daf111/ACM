@@ -8,6 +8,7 @@ namespace ACM.BL
         public static int InstanceCounter { get; set; }
 
         public int Id { get; private set; }
+        public int CustomerType { get; set; }
 
         private string _lastName;
         public string LastName {
