@@ -20,9 +20,9 @@ namespace ACM.BL
         public bool IsValid {
             get { return Validate(); }
         }
-        public override bool Validate()
+        public abstract bool Validate()
         {
-            return true;
+
         }
 
     }
