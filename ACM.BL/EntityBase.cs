@@ -20,10 +20,7 @@ namespace ACM.BL
         public bool IsValid {
             get { return Validate(); }
         }
-        public abstract bool Validate()
-        {
-
-        }
+        public abstract bool Validate();
 
     }
 }
