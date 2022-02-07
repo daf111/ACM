@@ -17,7 +17,10 @@ namespace ACM.BL
         public EntityStateOption EntityState { get; set; }
         public bool HasChanges { get; set; }
         public bool IsNew { get; private set; }
-        public bool IsValid()
+        public bool IsValid {
+            get { return Validate(); }
+        }
+        public override bool Validate()
         {
             return true;
         }
