@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tests\Acme.CommonTest\Acme.CommonTest.csproj" />
+    <ProjectReference Include="..\Acme.Common\Acme.Common.csproj" />
   </ItemGroup>
 
 </Project>

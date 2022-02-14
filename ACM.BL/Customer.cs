@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 
 namespace ACM.BL
 {
-    public class Customer: EntityBase
+    public class Customer: EntityBase, ILoggeable
     {
         public static int InstanceCounter { get; set; }
 
