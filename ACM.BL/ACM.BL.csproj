@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Tests\Acme.CommonTest\Acme.CommonTest.csproj" />
+  </ItemGroup>
+
 </Project>
