@@ -7,9 +7,9 @@ namespace Acme.Common
     /// </summary>
     /// <param name="source"></param>
     /// <returns></returns>
-    public class StringHandler
+    public static class StringHandler
     {
-        public string InsertSpaces(string source)
+        public static string InsertSpaces(string source)
         {
             string result = string.Empty;
 
