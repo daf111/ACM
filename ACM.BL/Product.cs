@@ -74,5 +74,14 @@ namespace ACM.BL
         {
             return ProductName;
         }
+        public string Log()
+        {
+            var logString = ProductId + ": " +
+                ProductName + " " +
+                "Detail: " + ProductDescription + " " +
+                "Status: " + EntityState.ToString();
+
+            return logString;
+        }
     }
 }
